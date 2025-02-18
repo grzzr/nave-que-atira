@@ -1,0 +1,52 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="*?f;v`ITpY14[VM{zh;:">Player</variable><variable type="KIND_SpriteKind" id="Cv_wC~GE.9~0`6%z~W:H">Projectile</variable><variable type="KIND_SpriteKind" id="LWP,_65vz^/b^si`Y/3]">Food</variable><variable type="KIND_SpriteKind" id="wogACM.j/viuh6l2#p=L">Enemy</variable><variable id=")s4e8XDWZmjkx_v51|!E">mySprite</variable><variable id="DUpF_4X)RdscyEms9u?A">mySprite2</variable><variable id="-EuYwQkGtL@Z:f21W+nO">projectile</variable><variable id="(0n3fbSK?oOFCHqZ@2X0">projectile2</variable></variables><block type="pxt-on-start" id="x{N.tw^O}7Caw{m)`.C6" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="b;=Arn`1SJ,0R8p6p{0o"><field name="VAR" id=")s4e8XDWZmjkx_v51|!E">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Y7ZO/(!AVhi;?nGzsvt3"><value name="img"><shadow type="screen_image_picker" id="JWfk=fnY!hDd8kl}T7f."><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . 2 2 2 2 . . . . . . 
+. . . . . 3 3 3 3 3 3 . . . . . 
+. . . . . 3 6 2 2 6 3 . . . . . 
+. . . . . 3 6 6 6 6 3 . . . . . 
+. . . . . 3 6 6 6 6 3 . . . . . 
+. 3 3 3 3 3 6 6 6 6 3 3 3 3 3 . 
+. . 2 2 . . . . . . . . 2 2 . . 
+. 1 2 2 1 . . . . . . 1 2 2 1 . 
+. . 5 2 . . . . . . . . 2 5 . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"JWfk=fnY!hDd8kl}T7f."}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="i8EjZ.5h@9[[l.aLzP@)"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="-fw4/_%YlTyikk5M=WCu"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="cE+j#zDBpwx+^Om.Jo7c"><field name="VAR" id=")s4e8XDWZmjkx_v51|!E">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="3(-WF9aR4``4sQ1*9!F-"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="g=;Mp(n1$paw]`,lnZe."><field name="speed">100</field></shadow></value></block></next></block></statement></block><block type="keyonevent" id="*Ng@zjC|8a{*=2OK`Smp" x="10" y="250"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set" id="pN#t8a-.+IkQcm#`bc.|"><field name="VAR" id="(0n3fbSK?oOFCHqZ@2X0">projectile2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromsprite" id="[ac?GqBht|z/LKlfhSE#"><value name="img"><shadow type="screen_image_picker" disabled="true"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"-[X~^`DCYkC+%7#)DS0@"}}</data></shadow><block type="screen_image_picker" id="sQW)3J|r5Mz3pnarT$yf"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . . 5 5 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"sQW)3J|r5Mz3pnarT$yf"}}</data></block></value><value name="sprite"><block type="variables_get" id="(54)6]h^euv?@:Mbqb!F"><field name="VAR" id=")s4e8XDWZmjkx_v51|!E">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id=")UWx,?hGsI~4],0%lNy:"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id=";VL7rPG$Ta-?yTz;!D`j"><field name="speed">-100</field></shadow></value></block></value><next><block type="music_playable_play" id="bR{}%4f;0U.(oWN8KEZM"><field name="playbackMode">music.PlaybackMode.InBackground</field><value name="toPlay"><shadow type="soundExpression_createSoundEffect" id="2H=2Z[wU6og3~QT7ICOY" inline="true"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="waveShape">WaveShape.Sine</field><field name="effect">SoundExpressionEffect.None</field><field name="interpolation">InterpolationCurve.Linear</field><data>{"commentRefs":[],"fieldData":{"waveShape":"{\"duration\":500,\"startFrequency\":5000,\"endFrequency\":0,\"startVolume\":44.689349920099424,\"endVolume\":0,\"wave\":\"sine\",\"interpolation\":\"linear\",\"effect\":\"none\"}"}}</data><value name="startFrequency"><shadow type="math_number_minmax" id="80v7W9|S5y:T7E7C,ftU"><mutation min="0" max="5000" label="StartFrequency" precision="0"></mutation><field name="SLIDER">5000</field></shadow></value><value name="endFrequency"><shadow type="math_number_minmax" id="AGrkE.qsd.s9Fq5@!Vr!"><mutation min="0" max="5000" label="EndFrequency" precision="0"></mutation><field name="SLIDER">0</field></shadow></value><value name="duration"><shadow type="math_number_minmax" id="ySjE0xpnScZq(d#1IPvw"><mutation min="1" max="9999" label="Duration" precision="0"></mutation><field name="SLIDER">500</field></shadow></value><value name="startVolume"><shadow type="math_number_minmax" id="k`6dK9n0YqlWU0c4BzV}"><mutation min="0" max="255" label="StartVolume" precision="0"></mutation><field name="SLIDER">45</field></shadow></value><value name="endVolume"><shadow type="math_number_minmax" id="dHQnA%S5@5`%^QSP63h6"><mutation min="0" max="255" label="EndVolume" precision="0"></mutation><field name="SLIDER">0</field></shadow></value></shadow></value></block></next></block></statement></block></xml>
